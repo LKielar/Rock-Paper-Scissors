@@ -1,0 +1,122 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(120deg, rgb(49, 46, 46), rgb(126, 80, 80));
+}
+
+.box {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	width: 800px;
+	height: 200px;
+	background-color: #aaa;
+}
+.box div p {
+	font-size: 20px;
+	margin-top: 10px;
+}
+h1 {
+	color: #ddd;
+	margin-bottom: 40px;
+	font-size: 40px;
+	font-weight: lighter;
+}
+.buttons {
+	width: 800px;
+	display: flex;
+	justify-content: space-evenly;
+	background-color: #aaa;
+}
+.button {
+	width: 100px;
+	font-size: 40px;
+	padding: 10px;
+	margin: 30px;
+	border-radius: 5px;
+}
+h2 {
+	text-align: center;
+	background-color: #aaa;
+	width: 800px;
+}
+
+.win,
+.lose {
+	position: absolute;
+	display: block;
+	top: 30%;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 25px;
+	font-weight: bold;
+	width: 400px;
+	height: 200px;
+	background-color: #888;
+	border: 2px solid rgb(126, 80, 80);
+	border-radius: 5px;
+}
+.win button,
+.lose button {
+	padding: 8px;
+	border-radius: 5px;
+}
+.lose p {
+	text-align: center;
+}
+
+.choice,
+.comp-choice {
+	font-size: 35px;
+}
+.user-result,
+.comp-result {
+    display: inline-block;
+    width: 35px;
+	font-size: 35px;
+}
+.draw {
+	display: none;
+	position: absolute;
+	font-size: 24px;
+	font-weight: bold;
+}
+.pluses {
+	position: absolute;
+}
+.plus {
+	position: absolute;
+	font-size: 50px;
+}
+.one {
+	color: green;
+	display: none;
+	left: -150px;
+	top: -20px;
+}
+.two {
+	color: red;
+	display: none;
+	top: -20px;
+	left: 80px;
+}
+.choice,
+.user-result {
+	color: green;
+}
+.comp-choice,
+.comp-result {
+	color: red;
+}

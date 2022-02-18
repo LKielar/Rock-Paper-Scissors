@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css.css">
+</head>
+
+<body>
+    <h1>Rock - Paper - Scissors</h1>
+    <div class="box">
+        <div class="user-choice">
+            <p>Your choice is:</p>
+            <p><span class="choice"></span></p>
+        </div>
+        <div class="computer-choice">
+            <p>Computer choice:</p>
+            <p><span class="comp-choice"></span></p>
+        </div>
+    </div>
+    <div class="pluses">
+        <p class="plus one">+</p>
+        <p class="plus two">+</p>
+    </div>
+    <div class="draw">
+        <span>DRAW</span>
+    </div>
+    <h2>Your score: <span class="user-result">0</span> | <span class="comp-result">0</span> :Computer score</h2>
+    <div class="buttons">
+        <button class="button" data-name="Rock">✊</button>
+        <button class="button" data-name="Paper">🧻</button>
+        <button class="button" data-name="Scissors">✂</button>
+    </div>
+    <div class="win">
+        <p>Congratulations, You won! 🏆</p>
+        <button class="tryagain">Play again</button>
+    </div>
+    <div class="lose">
+        <p>You lost. Try again :)</p>
+        <button class="tryagain">Try again</button>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
